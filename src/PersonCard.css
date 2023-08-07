@@ -1,0 +1,31 @@
+#person-card {
+  width: 300px;
+  height: 400px;
+  background-color: #edefee;
+  border-radius: 25px;
+  margin: 0px 20px;
+  padding: 30px;
+}
+
+#person-card h3 {
+  color: #ee9972;
+  font-size: 48px;
+  font-family: 'Markazi Text', serif;
+  font-weight: 700;
+}
+
+#person-card h4 {
+  color: black;
+  font-size: 48px;
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+  margin-top: -30px;
+}
+
+#person-card p {
+  color: black;
+  font-size: 32px;
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+  margin-top: -50px;
+}

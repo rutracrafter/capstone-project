@@ -1,0 +1,19 @@
+#testimonials {
+  font-size: 30px;
+  height: 1080px;
+  width: 100%;
+}
+
+#testimonials-title {
+  text-align: center;
+  margin-top: 350px;
+}
+
+#people-cards {
+  display: flex;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+}
