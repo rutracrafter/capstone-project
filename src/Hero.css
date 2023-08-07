@@ -1,0 +1,56 @@
+#hero {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  background-color: #495e57;
+}
+
+#hero-container {
+  display: flex;
+  width: 1440px;
+  height: 700px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero-container div h1 {
+  color: #f4ce14;
+  font-size: 92px;
+  font-family: 'Markazi Text', serif;
+  font-weight: 600;
+}
+
+#hero-container div h2 {
+  color: #edefee;
+  font-size: 72px;
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+  margin-top: -90px;
+}
+
+#hero-container div p {
+  width: 500px;
+  color: #edefee;
+  font-size: 36px;
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+  margin-top: -50px;
+}
+
+#hero-container div a {
+  border-radius: 30px;
+  background-color: #f4ce14;
+  text-decoration: none;
+  color: black;
+  font-size: 36px;
+  font-family: 'Markazi Text', serif;
+  font-weight: 600;
+  padding: 20px 60px;
+}
+
+#foodImg {
+  width: 400px;
+  border-radius: 20px;
+}
