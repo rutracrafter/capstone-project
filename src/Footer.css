@@ -1,0 +1,79 @@
+#footer {
+  width: 100%;
+  height: 800px;
+  background-color: #495e57;
+  display: flex;
+  align-items: center;
+}
+
+#footer-container {
+  width: 2440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#doormat-title {
+  color: black;
+  font-size: 54px;
+  font-family: 'Markazi Text', serif;
+  font-weight: 700;
+}
+
+#nav-list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#nav-list li a {
+  color: black;
+  font-size: 38px;
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+}
+
+#contact-title {
+  color: black;
+  font-size: 54px;
+  font-family: 'Markazi Text', serif;
+  font-weight: 700;
+}
+
+#contact {
+  color: black;
+  font-size: 38px;
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+}
+
+#contact-list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#socials-title {
+  color: black;
+  font-size: 54px;
+  font-family: 'Markazi Text', serif;
+  font-weight: 700;
+}
+
+#socials {
+  color: black;
+  font-size: 38px;
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+}
+
+#socials-list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#footer-img {
+  width: 500px;
+  border-radius: 20px;
+}
