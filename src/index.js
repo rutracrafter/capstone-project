@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import './index.css';
 import App from './App';
-import Reservations from './Reservations';
+import BookingPage from './BookingPage';
 import AboutPage from './AboutPage';
 import MenuPage from './MenuPage';
 import Login from './Login';
@@ -17,7 +17,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/menu" element={<MenuPage />} />
-        <Route path="/reservations" element={<Reservations />} />
+        <Route path="/booking" element={<BookingPage />} />
         <Route path="/order-online" element={<MenuPage />} />
         <Route path="/login" element={<Login />} />
       </Routes>
