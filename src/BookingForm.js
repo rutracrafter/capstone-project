@@ -16,6 +16,12 @@ const BookingForm = (props) => {
 
   const handleDate = (e) => {
     setDate(e.target.value);
+    props.dispatch(
+      {
+        type: "change",
+        date: date,
+      }
+    )
   }
 
   const handleTime = (e) => {
@@ -37,7 +43,7 @@ const BookingForm = (props) => {
         <input type="date" id="res-date" value={date} onChange={handleDate}/>
         <label htmlFor="res-time">Choose time</label>
         <select id="res-time" value={time} onChange={handleTime}>
-          {props.availableTimes.map((time) => <option>{time}</option>)}
+          {props.availableTimes.map((time) => <option key={time}>{time}</option>)}
         </select>
         <label htmlFor="guests">Number of guests</label>
         <input type="number" placeholder="1" min="1" max="10" id="guests" value={guests} onChange={handleGuests} />
