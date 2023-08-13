@@ -5,8 +5,9 @@ import './BookingForm.css';
 const BookingForm = (props) => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  const [guests, setGuests] = useState("");
+  const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("");
+  const [dateValid, setDateValid] = useState(true);
 
 
   const formStyles = {
@@ -46,11 +47,21 @@ const BookingForm = (props) => {
     setOccasion("");
   }
 
+  const invalidDate = () => {
+    if (date.length === 0) {
+      setDateValid(false);
+    }
+    else {
+      setDateValid(true);
+    }
+  }
+
   return (
     <div id="booking-form">
       <form style={formStyles}>
         <label htmlFor="res-date">Choose date</label>
-        <input type="date" id="res-date" value={date} onChange={handleDate}/>
+        <input type="date" id="res-date" value={date} onChange={handleDate} onBlur={invalidDate}/>
+        {dateValid ? "" : <h1>Please select a date above.</h1>}
         <label htmlFor="res-time">Choose time</label>
         <select id="res-time" value={time} onChange={handleTime}>
           {props.availableTimes.map((time) => <option key={time}>{time}</option>)}
