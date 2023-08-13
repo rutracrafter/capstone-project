@@ -1,5 +1,5 @@
 import React from 'react'
-import { useReducer } from 'react'
+import { useReducer, useState } from 'react'
 import BookingForm from './BookingForm'
 import Header from './Header'
 import Footer from './Footer'
@@ -17,6 +17,8 @@ const BookingPage = () => {
     }
   }
 
+  const [submitted, setSubmitted] = useState(false);
+
   const initializeTimes = () => {
     return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
   }
@@ -29,7 +31,8 @@ const BookingPage = () => {
       <div id="booking-container">
         <h1 id="booking-title">Booking</h1>
         <p id="booking-desc">Fill out the form below to make a reservation!</p>
-        <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
+        <BookingForm availableTimes={availableTimes} dispatch={dispatch} setSubmitted={setSubmitted} />
+        {submitted ? <h1>Form Submitted!</h1> : ""}
       </div>
       <Footer />
     </div>

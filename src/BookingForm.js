@@ -8,6 +8,7 @@ const BookingForm = (props) => {
   const [guests, setGuests] = useState("");
   const [occasion, setOccasion] = useState("");
 
+
   const formStyles = {
     "display": "grid",
     "maxWidth": "200px",
@@ -36,6 +37,15 @@ const BookingForm = (props) => {
     setOccasion(e.target.value);
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    props.setSubmitted(true);
+    setDate("");
+    setTime("");
+    setGuests("");
+    setOccasion("");
+  }
+
   return (
     <div id="booking-form">
       <form style={formStyles}>
@@ -52,7 +62,7 @@ const BookingForm = (props) => {
             <option>Birthday</option>
             <option>Anniversary</option>
         </select>
-        <input type="submit" value="Make Your reservation" />
+        <input type="submit" value="Make Your reservation" onClick={handleSubmit} />
       </form>
     </div>
   )
